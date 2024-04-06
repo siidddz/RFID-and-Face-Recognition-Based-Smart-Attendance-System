@@ -2,6 +2,6 @@
 Automate attendance using RFID cards and facial recognition. Enhance accuracy and efficiency in educational institutions. Access source code and documentation for seamless deployment and customization.
 
 # Contributors
-MMurtaza Ezzy (Back-end)
+Murtaza Ezzy (Back-end)
 Lalan-Desai (IOT)
 Siddharth Parmar (Front-End) 
