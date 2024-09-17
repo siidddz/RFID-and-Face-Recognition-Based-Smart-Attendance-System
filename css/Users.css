@@ -1,0 +1,125 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff; /* White background for the entire page */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 28px;
+  color: #6c5b7b; /* Soft purple color */
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin: 20px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+  color: #9a8c98; /* Slightly lighter purple on hover */
+}
+
+th {
+  padding: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  color: #6c5b7b; /* Soft purple color */
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.8); /* Light white with slight transparency */
+  border: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+section {
+  margin: 50px;
+  background: #ffffff; /* Solid white background */
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+section:hover {
+  background: #f8f9fa; /* Slightly off-white on hover for subtle effect */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light gray background for scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6c5b7b; /* Soft purple color */
+  border-radius: 10px;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+/* Animations */
+.slideInRight {
+  animation: slideInRight 1s ease-out;
+}
+
+.slideInDown {
+  animation: slideInDown 1s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  section {
+    margin: 10px;
+    padding: 10px;
+  }
+  th {
+    padding: 8px 4px;
+    font-size: 14px;
+  }
+  td {
+    padding: 8px;
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
